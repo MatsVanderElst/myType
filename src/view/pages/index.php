@@ -38,10 +38,38 @@
                 <img class="clarendonQuestStepOne__title-image" src="#" alt="step one">
             </h3>
             <p class="clarendonQuestStepOne__paragraph">Welcome to the Clarendon Quest, our plan to make the world a  more bracketed place… We all know by now that the Clarendon is the best font, It’s elegance is simply unmatched by any other slab font. This is why we have decided to rid the world of boring slab serifs and sans serif fonts. No longer will you have to look at inferior fonts on the street!</p>
+            <p class="clarendonQuestStepOne__paragraph">Order a free Clarendon Quest sticker pack by signing up for our mailinglist and we’ll send you an envelope with some “clarendishious” stickers to turn those boring san serifs into a font worth looking at!</p>    
             <form class="clarendonQuestStepOne__form" action="">
-
+                <!-- <input class="clarendonQuestStepOne__form-adress" type="adress">
+                <input class="clarendonQuestStepOne__form-name" type="text">
+                <button ></button> -->
             </form>
-            <img class="clarendonQuestStepOne__stickerpack" src="#" alt="stickerPack">
+                <img class="clarendonQuestStepOne__stickerpack" src="#" alt="stickerPack">
+            </div>
+        <div class="clarendonQuestStepTwo__container">
+            <img class="clarendonQuestStepTwo__title-image" src="#" alt="step two">
+            <p class="clarendonQuestStepTwo__paragraph">Go out into the streets of your local town, look for posters, logo's, signs,... to find fonts that need some altering and put the sticker over them to transform the font into a beautiful Clarendon</p>
+            <img class="clarendonQuestStepTwo__stickerImage" src="#" alt="clarendon quest sticker">
+            <img class="clarendonQuestStepTwo__stickerGif" src="#" alt="clarendon quest sticker gif">
         </div>
+        <div class="clarendonQuestStepThree__container">
+            <img class="clarendonQuestStepThree__title-image" src="#" alt="step three">
+            <p class="clarendonQuestStepThree__paragraph">Go out into the streets of your local town, look for posters, logo's, signs,... to find fonts that need some altering and put the sticker over them to transform the font into a beautiful Clarendon</p>
+            <img class="clarendonQuestStepThree__stickerImage" src="#" alt="clarendon quest sticker">
+        </div>
+    </div>
+    <div class="gallery__container">
+        <article class="gallery__images">
+            <?php foreach ($products as $product) : ?>
+                <div class="gallery__image">
+                    <p class="gallery__image-name"><?php echo $image['username'] ?></p>
+                    <img class="gallery__image-image" src="#" alt="sticker image">
+                </div>
+            <?php endforeach; ?>
+        </article>
+    </div>
+    <div class="footer__container">
+        <p class="footer__paragraph"> Thanks for visiting!</p>
+        <!-- verwijzing naar font van volgende week -->
     </div>
 </section>
