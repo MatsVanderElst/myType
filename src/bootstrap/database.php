@@ -1,10 +1,10 @@
 <?php
 use Illuminate\Database\Capsule\Manager as Capsule;
-/* $capsule = new Capsule;
+$capsule = new Capsule;
 $capsule->addConnection([
  'driver'    => 'mysql',
  'host'      => getenv('PHP_DB_HOST') ?: 'mysql',
- 'database'  => getenv('PHP_DB_DATABASE') ?: 'plansdb',
+ 'database'  => getenv('PHP_DB_DATABASE') ?: 'mytypedb',
  'username'  => getenv('PHP_DB_USERNAME') ?: 'root',
  'password'  => getenv('PHP_DB_PASSWORD') ?: 'devine4life',
  'charset'   => 'utf8mb4',
@@ -12,4 +12,4 @@ $capsule->addConnection([
  'prefix'    => '',
 ]);
 $capsule->setAsGlobal();
-$capsule->bootEloquent(); */
+$capsule->bootEloquent(); 
