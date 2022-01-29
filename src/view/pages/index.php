@@ -1,21 +1,21 @@
 <section class="content">
     <div class="landingPage__container">
-        <h1 class="landingPage__title">The Clarendon
-            <img class="landingPage__title-image" alt="title image" src="#">
+        <h1 class="landingPage__title" >
+            <img class="landingPage__title-image" alt="title image" src="assets/img/titleImageMobile.png">
         </h1>
         <img class="landingPage__slantedLogo" alt="slanted logo" src="#">
-        <img class="landingPage__R" src="#" alt="capital R">
+        <img class="landingPage__R" src="assets/img/rImage.png" alt="capital R">
         <nav class="navigation__container">
             <a href="#"></a><p class="navigation__history">History</p></a>
             <a href="#"></a><p class="navigation__characteristics">characteristics</p></a>
             <a href="#"></a><p class="navigation__clarendonQuest">Clarendon Quest</p></a>
         </nav>
-        <img class="landingPage__arrow" src="#.svg" alt="arrow">
+        <img class="landingPage__arrow" src="#" alt="arrow">
     </div>
     <div class="characteristics__container">
         <h2 class="characteristics__title">Characteristics</h2>
         <p class="characteristics__paragraph">The Clarendon was mainly used for body text during the 19th century because of its legibility and style. The font is characterised by its  low contrast and it’s strong bracketed serifs. Some lower-case letters like the “a”,“c” and “y” end in ball terminals. It has a tall x-height that give the font a sturdy look in combination with it’s short ascenders and descenders</p>
-        <video class="characteristics__video" autoplay="none" muted="muted"></video> <!-- https://stackoverflow.com/questions/35733029/cross-browser-animated-gif-on-hover-reverse-when-mouse-leaves -->
+        <img class="characteristics__gif" src="assets/img/AaBb.gif" ></img> <!-- https://stackoverflow.com/questions/35733029/cross-browser-animated-gif-on-hover-reverse-when-mouse-leaves -->
     </div>
     <div class="history__container"> <!-- ===> svg lettes achtergrond aanpassen aan schermgrote -->
     <p class="history__paragraphOne">During the course of the 19th century the context in which type was used started changing. Due to the industrial revolution letters no longer only appeared in books. People took jobs in the city and type became the a main form of communication. Instead letters where also found on product packaging, billboards, posters, … </p>

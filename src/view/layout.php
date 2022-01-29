@@ -14,7 +14,7 @@
 <body>
   <div class="container">
     <header>
-      <h1 class="pagetitle hide">clarendon</h1>
+      <h1 class="pagetitle hide" hidden>clarendon</h1>
     </header>
     <?php echo $content; ?>
   </div>

@@ -1,5 +1,4 @@
 @import './css/reset.css';
-@import './css/vars.css';
 
 :root {
     --colorLightest: white;
@@ -8,7 +7,7 @@
     --colorSecondary: #a3f4dc;
     --colorGray: #fafafa;
     --colorGrayDark: #9c9c9c;
-    --spacerSmall: .75rem; /* 12px */
+    --spacerSmall: .50rem; /* 12px */
     --spacerRegular: 1rem; /* 16px */
     --spacerBig: 1.88rem; /* 30px */
     --fontSmall: .75rem; /* 12px */
@@ -24,7 +23,6 @@ html {
     box-sizing: border-box;
     overflow: visible;
     font-family: Helvetica, Arial, sans-serif;
-  
     width: 100%;
   }
   
@@ -39,4 +37,41 @@ html {
   body {
     font-family: var(--font);
     background-color: #393e5b;
+    min-width: 380px;
+  }
+
+  .hide{
+    visibility: none;
+  }
+
+  .landingPage__container{
+    height: 840px;
+    margin: var(--spacerSmall);
+  }
+
+  .landingpage__title{
+    width: 80%;
+    margin-right: 2rem;
+  }
+
+  .landingPage__title-image{
+    max-width: 100%;
+    width: 80%;
+    height: auto;
+    position: inherit;
+
+    margin-right: -5rem;
+
+    overflow: hidden;
+  }
+
+  .navigation__history{
+    color: cyan;
+  }
+
+
+  .characteristics__gif{
+    width: 360px;
+    height: auto;
+    overflow: hidden;
   }
