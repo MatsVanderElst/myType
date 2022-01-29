@@ -71,10 +71,9 @@
             </h3>
             <p class="clarendonQuestStepOne__paragraph">Welcome to the Clarendon Quest, our plan to make the world a  more bracketed place… We all know by now that the Clarendon is the best font, It’s elegance is simply unmatched by any other slab font. This is why we have decided to rid the world of boring slab serifs and sans serif fonts. No longer will you have to look at inferior fonts on the street!</p>
             <p class="clarendonQuestStepOne__paragraph">Order a free Clarendon Quest sticker pack by signing up for our mailinglist and we’ll send you an envelope with some “clarendishious” stickers to turn those boring san serifs into a font worth looking at!</p>    
-            <form class="clarendonQuestStepOne__form" action="">
-                <!-- <input class="clarendonQuestStepOne__form-adress" type="adress">
-                <input class="clarendonQuestStepOne__form-name" type="text">
-                <button ></button> -->
+            <form class="clarendonQuestStepOne__form" action="index.php?page=upload" method="post" enctype="multipart/form-data"> 
+                <input type="file" name="file" required>
+                <button type="submit">Submit</button>
             </form>
                 <img class="clarendonQuestStepOne__stickerpack" src="#" alt="stickerPack">
             </div>

@@ -1,11 +1,16 @@
 <?php
 // set routes
+use Illuminate\Http\Request;
+
 $routes = array(
   'home' => array(
     'controller' => 'Pages',
     'action' => 'index'
+  ),
+  'upload' => array(
+    'controller' => 'Pages',
+    'action' => 'upload'
   )
-
 );
 
 if (empty($_GET['page'])) {
