@@ -1,15 +1,25 @@
 <section class="content">
     <div class="landingPage__container">
+        <nav class="navbar">
+            <div class="navbar-container container">
+                <input type="checkbox" name="" id="">
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <ul class="menu-items">
+                    <li><a href="#characteristics">characteristics</a></li>
+                    <li><a href="#history">History</a></li>
+                    <li><a href="#clarendonQuest">Clarendon quest</a></li>
+                </ul>
+            </div>
+        </nav>
         <h1 class="landingPage__title" >
             <img class="landingPage__title-image" alt="title image" src="assets/img/titleImageMobile.png">
         </h1>
         <img class="landingPage__slantedLogo" alt="slanted logo" src="#">
         <img class="landingPage__R" src="assets/img/rImage.png" alt="capital R">
-        <nav class="navigation__container">
-            <a href="#"></a><p class="navigation__history">History</p></a>
-            <a href="#"></a><p class="navigation__characteristics">characteristics</p></a>
-            <a href="#"></a><p class="navigation__clarendonQuest">Clarendon Quest</p></a>
-        </nav>
         <img class="landingPage__arrow" src="#" alt="arrow">
     </div>
     <div class="characteristics__container">

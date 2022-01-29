@@ -1,4 +1,4 @@
-import './style.css';
-import {init} from './js/script';
+/* import './style.css'; */
+/* import {init} from './js/script'; */
 
 init();

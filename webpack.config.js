@@ -53,10 +53,10 @@ module.exports = (env, {mode}) => {
       ]
     },
     plugins: [
-      new HtmlWebPackPlugin({
+      /* new HtmlWebPackPlugin({
         template: './src/index.html',
         filename: './index.html'
-      }),
+      }), */
       new MiniCssExtractPlugin({
         filename: 'style.[contenthash].css'
       }),
