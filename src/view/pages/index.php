@@ -25,7 +25,7 @@
                     <span class="line line3 "></span>
                 </div>  
                 <div class="logo">
-                    <img class="landingPage__slantedLogo" alt="slanted logo" src="assets/img/slantedLogo.png">    
+                    <img class="landingPage__slantedLogo" alt="slanted logo" src="assets/img/slantedLogo.svg">    
                 </div>
                 <div class="menu-items nav-menu">
                     <li><a href="#">Characteristics</a></li>
@@ -75,40 +75,36 @@
                 <article class="formcontent">
                     <div class="formStyle">
                         <label class="formlabel" for="name"> Name:</label>
-                        <input class="input" required name="name" type="text" placeholder="Your name">
+                        <input class="input nameInput" required name="name" type="text" placeholder="Your name">
                     </div>
                     <div class="formStyle">
                         <label class="formlabel" for="address"> Address:</label>
-                        <input class="input" required name="address" type="text" placeholder="Bakerslane 12">
+                        <input class="input addressInput" required name="address" type="text" placeholder="Bakerslane 12">
                     </div>
                     <div class="formStyle">
                         <label class="formlabel" for="postal_code"> Postal code:</label>
-                        <input class="input" required name="postal_code" type="number" placeholder="8500">
+                        <input class="input postalCodeInput" required name="postal_code" type="number" placeholder="8500">
                     </div>
                     <div class="formStyle">
                         <label class="formlabel" for="city"> City:</label>
-                        <input class="input" required name="city" type="text" placeholder="Kortrijk">
+                        <input class="input cityInput" required name="city" type="text" placeholder="Kortrijk">
                     </div>
                     <div class="formStyle">
                         <label class="formlabel" for="country"> Country:</label>
-                        <select class="input" required name="country" type="text"> 
+                        <select class="input countryInput" required name="country" type="text"> 
                             <?php
 
                             foreach ($countries as $country) : ?>
-                                <option <?php echo $country['name'] == 'Belgium' ? "selected" : "" ?> value="<?php echo $country['name']; ?>"><?php echo $country['name']; ?></option>
+                                <option <?php echo $country['name'] == 'Belgium' ? "selected" : "" ?> value="<?php echo $country['id']; ?>"><?php echo $country['name']; ?></option>
                             <?php endforeach; ?>
                         </select>
                     </div>
                 </article>
-                <input type="submit" value="Login" class="submitButton">
+                <input type="submit" value="submit" class="submitButton">
             </form>
 
-            <form class="clarendonQuestStepOne__form" action="index.php?page=upload" method="post" enctype="multipart/form-data"> 
-                <input type="file" name="file" required>
-                <button type="submit">Submit</button>
-            </form>
-                <img class="clarendonQuestStepOne__stickerpack" src="#" alt="stickerPack">
-            </div>
+            <img class="clarendonQuestStepOne__stickerpack" src="#" alt="stickerPack">
+        </div>
         <div class="clarendonQuestStepTwo__container">
             <img class="clarendonQuestStepTwo__title-image" src="#" alt="step two">
             <p class="clarendonQuestStepTwo__paragraph"><?php echo $textArray['clarendonQuestStepTwo__paragraph']; ?></p>    
@@ -119,6 +115,10 @@
             <img class="clarendonQuestStepThree__title-image" src="#" alt="step three">
             <p class="clarendonQuestStepThree__paragraph"><?php echo $textArray['clarendonQuestStepThree__paragraph']; ?></p>
             <img class="clarendonQuestStepThree__stickerImage" src="#" alt="clarendon quest sticker">
+            <form class="clarendonQuestStepThree__form" action="index.php?page=upload" method="post" enctype="multipart/form-data"> 
+                <input type="file" name="file" required>
+                <button type="submit">Submit</button>
+            </form>
         </div>
     </div>
     <div class="gallery__container">

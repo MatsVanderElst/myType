@@ -54,12 +54,14 @@ class PagesController extends Controller
 
     $order = new Order ;
     $order->name = $_GET['name'];
-    $order->adress = $_GET['adress'];
-    $order->postal_code = $_GET['postal_code'];
+    $order->address = $_GET['address'];
+    $order->postal_code = intval($_GET['postalCode']);
     $order->city = $_GET['city'];
-    $order->country_id = $_GET['country_id'];
+    $order->country_id = intval( $_GET['country']);
 
     $order->save();
+    
+    
   }
 
 }

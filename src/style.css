@@ -46,7 +46,9 @@ html {
     body{
       text-align: center;
     }
+  
   }
+  
 
   .menu-items-desk {
     display: none;
@@ -232,7 +234,7 @@ html {
   .landingPage__arrow{
     width: 4rem;
     height: 2rem;
-    margin-top: 5rem;
+    margin-top: 6rem;
 
   }
 
@@ -242,12 +244,35 @@ html {
 
   .characteristics__container{
     height: 64rem;
+    text-align: start;
   }
 
   .characteristics__gif{
-    width: 90%;
+    width: 95%;
     padding: 0.5rem;
     margin: 0 auto;
+  }
+
+  .characteristics__title{
+    font-family: clarendon-urw,serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+  }
+
+  .characteristics__paragraph{
+    margin: 1rem;
+    font-size: 1.2rem;
+    width: 70%;
+    margin: auto;
+    margin-top: 1.5rem; 
+    margin-bottom: 1.5rem; 
+  }
+
+  p{
+    font-family: clarendon-urw,serif;
+    font-weight: 300;
+    font-style: normal;
   }
 
   @media only screen and (min-width:  500px){
@@ -268,6 +293,15 @@ html {
 
       
       margin-right: 0.5rem;
+    }
+
+    .characteristics__container{
+      text-align: left;
+      margin-left: 5%;
+    }
+
+    .characteristics__gif{
+      width: 90%;
     }
   }
   

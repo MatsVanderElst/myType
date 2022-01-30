@@ -10,7 +10,11 @@ $routes = array(
   'upload' => array(
     'controller' => 'Pages',
     'action' => 'upload'
-  )
+  ),
+  'order' => array(
+    'controller' => 'Pages',
+    'action' => 'order'
+  ),
 );
 
 if (empty($_GET['page'])) {
