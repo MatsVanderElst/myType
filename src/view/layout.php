@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.typekit.net/rzc0ymb.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <link rel="stylesheet" href="css/reset.css">
+ <!--  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js" type="text/javascript" ></script>
+  <script src="js/script.js" type="text/javascript" ></script> -->
   <?php echo $css; ?>
   <title>my-type</title>
 </head>
