@@ -1,48 +1,41 @@
 <section class="content">
-    <div class="landingPage__container">
-        <!-- <nav class="navbar">
-            <div class="navbar-container container">
-                <input type="checkbox" name="" id="">
-                <div class="hamburger-lines">
-                    <span class="line line1"></span>
-                    <span class="line line2"></span>
-                    <span class="line line3"></span>
-                </div>
-                <img class="landingPage__slantedLogo" alt="slanted logo" src="assets/img/slantedLogo.png">
-                <ul class="menu-items">
-                    <li><a href="#characteristics">characteristics</a></li>
-                    <li><a href="#history">History</a></li>
-                    <li><a href="#clarendonQuest">Clarendon quest</a></li>
-                </ul>
+    <!-- <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id="">
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
             </div>
-        </nav> -->
-    <nav>
-      <div class="navbar dissapear">
-        <div class="containerr nav-container ">
-            <input class="checkbox " type="checkbox" name="" id="" />
-            <div class="hamburger-lines ">
-              <span class="line line1 "></span>
-              <span class="line line2 "></span>
-              <span class="line line3 "></span>
-            </div>  
-          <div class="logo">
-             <img class="landingPage__slantedLogo" alt="slanted logo" src="assets/img/slantedLogo.png">    
-          </div>
-          <div class="menu-items">
-            <li><a href="#">Characteristics</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Clarendon Quest</a></li>
-          </div>
+            <img class="landingPage__slantedLogo" alt="slanted logo" src="assets/img/slantedLogo.png">
+            <ul class="menu-items">
+                <li><a href="#characteristics">characteristics</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#clarendonQuest">Clarendon quest</a></li>
+            </ul>
         </div>
-      </div>
-    </nav>
+    </nav> -->
     <nav>
-        <div class="menu-items-desk">
-            <li><a href="#">Characteristics</a></li>
-            <li><a href="#">History</a></li>
-            <li><a href="#">Clarendon Quest</a></li>
+        <div class="navbar">
+            <div class="containerr nav-container ">
+                <input class="checkbox " type="checkbox" name="" id="" />
+                <div class="hamburger-lines ">
+                    <span class="line line1 "></span>
+                    <span class="line line2 "></span>
+                    <span class="line line3 "></span>
+                </div>  
+                <div class="logo">
+                    <img class="landingPage__slantedLogo" alt="slanted logo" src="assets/img/slantedLogo.png">    
+                </div>
+                <div class="menu-items nav-menu">
+                    <li><a href="#">Characteristics</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Clarendon Quest</a></li>
+                </div>
+            </div>
         </div>
     </nav>
+    <div class="landingPage__container">
         <h1 class="landingPage__title" >
             <img class="landingPage__title-image" alt="title image" src="assets/img/titleImageMobile.png">
         </h1>
