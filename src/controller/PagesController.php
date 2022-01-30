@@ -41,7 +41,18 @@ class PagesController extends Controller
       $image->save(); // Finally, save the record.
     } */
 
+  }
+  
+  public function order(){
 
+    $order = new Order ;
+    $order->name = $_GET['name'];
+    $order->adress = $_GET['adress'];
+    $order->postal_code = $_GET['postal_code'];
+    $order->city = $_GET['city'];
+    $order->country_id = $_GET['country_id'];
+
+    $order->save();
   }
 
 }

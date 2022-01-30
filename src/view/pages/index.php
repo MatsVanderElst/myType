@@ -71,6 +71,37 @@
             </h3>
             <p class="clarendonQuestStepOne__paragraph">Welcome to the Clarendon Quest, our plan to make the world a  more bracketed place… We all know by now that the Clarendon is the best font, It’s elegance is simply unmatched by any other slab font. This is why we have decided to rid the world of boring slab serifs and sans serif fonts. No longer will you have to look at inferior fonts on the street!</p>
             <p class="clarendonQuestStepOne__paragraph">Order a free Clarendon Quest sticker pack by signing up for our mailinglist and we’ll send you an envelope with some “clarendishious” stickers to turn those boring san serifs into a font worth looking at!</p>    
+
+
+            <form class="clarendonQuestStepOne__form" action="index.php?page=order" method="get">
+                <article class="formcontent">
+                    <div class="formStyle">
+                        <label class="formlabel" for="name"> Name:</label>
+                        <input class="input" required name="name" type="text" placeholder="Your name">
+                    </div>
+                    <div class="formStyle">
+                        <label class="formlabel" for="address"> Address:</label>
+                        <input class="input" required name="address" type="text" placeholder="Bakerslane 12">
+                    </div>
+                    <div class="formStyle">
+                        <label class="formlabel" for="postal_code"> Postal code:</label>
+                        <input class="input" required name="postal_code" type="number" placeholder="8500">
+                    </div>
+                    <div class="formStyle">
+                        <label class="formlabel" for="city"> City:</label>
+                        <input class="input" required name="city" type="text" placeholder="Kortrijk">
+                    </div>
+                    <div class="formStyle">
+                        <label class="formlabel" for="country"> Country:</label>
+                        <select class="input" required name="country" type="text"> 
+                            <option value="1">Belgium</option>
+                            <option value="2">Netherlands</option>
+                        </select>
+                    </div>
+                </article>
+                <input type="submit" value="Login" class="submitButton">
+            </form>
+
             <form class="clarendonQuestStepOne__form" action="index.php?page=upload" method="post" enctype="multipart/form-data"> 
                 <input type="file" name="file" required>
                 <button type="submit">Submit</button>

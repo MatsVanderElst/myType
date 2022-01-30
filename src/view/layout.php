@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <script src="../js/script.js" type="text/javascript" ></script>
+  <script src="js/script.js" type="text/javascript" ></script>
   <?php echo $css; ?>
   <title>my-type</title>
 </head>
