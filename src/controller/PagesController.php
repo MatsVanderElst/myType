@@ -11,10 +11,17 @@ class PagesController extends Controller
 {
   public function index(){
     $countries = Country::all();
-    $orders = Order::all();
-    $ordersForBelgium = Order::where("country_id","=",1)->get();
     $texts = Text::all();
 
+    $this->set('countries', $countries);
+    
+
+    $textCollection = Text::all();
+    $textArray = $textCollection->mapWithKeys(function ($item, $key) {
+      return [$item['name'] => $item['content']]; 
+    });
+    $textArray->all();
+    $this->set('textArray', $textArray);
 
     /* $file = $request->file('image');
     $contents = $file->openFile()->fread($file->getSize()); */
