@@ -301,11 +301,12 @@ html {
   
     .history__container p{
       font-size: 4vw;
-      padding: 2vw;
-      background-color: rgba(255, 255, 255, 0.685);
+      padding: 3vw;
+     /*  background-color: rgba(255, 255, 255, 0.685); */
       border-radius: 25px;
+      border: red solid 0.5vw;
       
-      /* filter: opacity(0%); */
+      backdrop-filter: blur(5px);
     }
     
     .history__title{
