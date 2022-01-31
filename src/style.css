@@ -237,11 +237,6 @@ html {
     display: none;
   }
 
-  .landingPage__R{
-    width: 18rem;
-
-  }
-
   .landingPage__arrow{
     width: 4rem;
     height: 2rem;
@@ -254,12 +249,13 @@ html {
   }
 
   .characteristics__container{
-    height: 90vh;
+    height: 95vh;
     text-align: start;
     margin-top: 7rem;
   }
 
   .characteristics__gif{
+    margin-top: 10vh;
     width: 95%;
     padding: 0.5rem;
     margin: 0 auto;
@@ -287,7 +283,70 @@ html {
     font-style: normal;
   }
 
+  /*  */
+
+  .history__container{
+    background-image: url("assets/img/lettersBackgroundMobile.svg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 110vw auto;
+    
+/*     height: 250vh; */
+    height: auto;
+    padding-bottom: 30vw;
+    text-align: left;
+    padding-top: 8.5vw;
+  }
+  @media only screen and (max-width: 500px){
   
+    .history__container p{
+      font-size: 4vw;
+      padding: 2vw;
+      background-color: rgba(255, 255, 255, 0.685);
+      border-radius: 25px;
+      
+      /* filter: opacity(0%); */
+    }
+    
+    .history__title{
+      font-weight: 800;
+      font-family: clarendon;
+      font-size: 7vw;
+      margin: 0 auto;
+      padding-top: -10rem;
+      padding-bottom: 5vw;
+  
+    }
+  
+    .history__paragraphOne{
+      margin-left: 34vw;
+      margin-right: 4vw;
+    }
+  
+    .history__paragraphTwo{
+      margin-top: 35vw;
+      margin-left: 4vw;
+      margin-right: 4vw;
+    }
+  
+    .history__paragraphThree{
+      margin-top: 35vw;
+      margin-left: 40vw;
+      margin-right: 4vw;
+    }
+  
+    .history__paragraphFour{
+      margin-top: 75vw;
+      margin-left: 5vw;
+      margin-right: 45vw;
+    }
+  
+    .history__paragraphFive{
+      margin-top: 13vw;
+      margin-left: 5vw;
+      margin-right: 20vw;
+    }
+  }
 
   @media only screen and (min-width:  500px){
 
@@ -410,22 +469,20 @@ html {
         background-repeat: no-repeat;
         background-size: 130vw auto;
 
-        height: 500vh;
+        height: auto;
+        padding-bottom: 30vw;
         text-align: center;
       }
 
-      .history__title{
-        font-size: 2.5vw;
-        font-weight: 800;
-        font-family: clarendon;
-      }
 
       .history__title{
         font-size: 2.5vw;
         font-weight: 800;
         font-family: clarendon;
-        font-size: 3vw;
-        margin-top: -3rem;
+        font-size: 7vw;
+        margin: 0 auto;
+        margin-top: -7rem;
+        margin-left: 39%;
       }
 
       .history__container p{
@@ -437,7 +494,7 @@ html {
       .history__paragraphOne{
         margin-left: 29vw;
         margin-right: 29vw;
-        padding-top: 13.5vw;
+        padding-top: 6vw;
       }
 
       .history__paragraphTwo{
@@ -508,6 +565,7 @@ html {
             "titleParagraph gif";
 
           padding: 1rem;
+          margin-top: 20vw;
            
         }
 
