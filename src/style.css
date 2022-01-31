@@ -54,8 +54,10 @@ html {
   }
 
   .landingPage__container{
-    height: 85vh;
+    height: auto;
     margin: var(--spacerSmall);
+    margin-top: 0rem;
+    margin-bottom: 2rem;
   }
 
   .containerr {
@@ -76,7 +78,7 @@ html {
   
   .navbar .menu-items {
     display: flex;
-    background-color: rgba(255, 255, 255, 0.952);
+    background-color: rgb(255, 255, 255);
     background-image: url("assets/img/hamburgerBackground.png");
     opacity: 0.80;
   }
@@ -90,9 +92,11 @@ html {
   .navbar .nav-container a {
     text-decoration: none;
     color: #ff0000;
-    font-weight: 900;
-    font-size: 1.2rem;
-    font-size: 2rem;
+    /* -webkit-text-stroke: 0.5vw rgb(255, 255, 255); */
+    
+    font-weight: 1000;
+    font-size: 7vw;
+    
     padding: 1rem;
 
     
@@ -249,10 +253,9 @@ html {
   }
 
   .characteristics__container{
-    height: 95vh;
     text-align: start;
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
   }
 
   .characteristics__gif{
@@ -292,12 +295,36 @@ html {
     background-repeat: no-repeat;
     background-size: 110vw auto;
     
+    
 /*     height: 250vh; */
     height: auto;
-    padding-bottom: 30vw;
+    padding-bottom: 9vw;
+    border-bottom: red 1rem;
     text-align: left;
     padding-top: 8.5vw;
   }
+
+  .clarendonQuest__container{
+    height: 100vh;
+    text-align: center;
+    
+  }
+  
+  .clarendonQuest__title{
+    width: 100vw;
+    margin: 0 auto;
+
+  }
+  .clarendonQuest__M{
+    display: none;
+  }
+
+  .clarendonQuest__title-image{
+    width: 90vw;
+
+  }
+
+
   @media only screen and (max-width: 500px){
   
     .history__container p{
@@ -315,8 +342,8 @@ html {
       font-family: clarendon;
       font-size: 7vw;
       margin: 0 auto;
-      padding-top: -10rem;
-      padding-bottom: 5vw;
+      
+      padding-bottom: 10vw;
   
     }
   
@@ -347,6 +374,58 @@ html {
       margin-top: 13vw;
       margin-left: 5vw;
       margin-right: 20vw;
+    }
+  }
+
+  @media only screen and (max-width: 900px) and (min-width: 500px) {
+  
+    .history__container p{
+      font-size: 3.2vw;
+      padding: 3vw;
+     /*  background-color: rgba(255, 255, 255, 0.685); */
+     /*  border-radius: 25px;
+      border: red solid 0.5vw;
+      
+      backdrop-filter: blur(5px); */
+    }
+    
+    .history__title{
+      font-weight: 800;
+      font-family: clarendon;
+      font-size: 7vw;
+      margin: 0 auto;
+      
+      padding-bottom: 9vw;
+  
+    }
+  
+    .history__paragraphOne{
+      margin-left: 45vw;
+      margin-right: 2vw;
+    }
+  
+    .history__paragraphTwo{
+      margin-top: 46vw;
+      margin-left: 5vw;
+      margin-right: 4vw;
+    }
+  
+    .history__paragraphThree{
+      margin-top: 13vw;
+      margin-left: 37vw;
+      margin-right: 4vw;
+    }
+  
+    .history__paragraphFour{
+      margin-top: 17vw;
+      margin-left: 32vw;
+      margin-right: 4vw;
+    }
+  
+    .history__paragraphFive{
+      margin-top: 87vw;
+      margin-left: 4vw;
+      margin-right: 58vw;
     }
   }
 
@@ -472,7 +551,7 @@ html {
         background-size: 130vw auto;
 
         height: auto;
-        padding-bottom: 30vw;
+        padding-bottom: 5vw;
         text-align: center;
       }
 
@@ -485,6 +564,7 @@ html {
         margin: 0 auto;
         margin-top: -7rem;
         margin-left: 39%;
+        padding-bottom: 5vw;
       }
 
       .history__container p{

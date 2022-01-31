@@ -58,13 +58,13 @@
     </div>
     <div class="clarendonQuest__container">
         <h2 class="clarendonQuest__title">Clarendon Quest
-            <img class="clarendonQuest__title-image" src="#" alt="Clarendon Quest">
+            <img class="clarendonQuest__title-image" src="assets/img/clarendonQuestTitleImage.png" alt="Clarendon Quest">
         </h2>
-        <img class="clarendonQuest__slantedLogo" alt="tiny slanted logo" src="#">
+        <img class="clarendonQuest__M" alt="half M serifs" src="#">
         <p class="clarendonQuest__paragraph"><?php echo $textArray['clarendonQuest__paragraph']; ?></p>
-    </div></p>
         <p class="clarendonQuest__findOut"> find out how!</p>
         <img class="clarendonQuest__arrow" src="#.svg" alt="arrow">
+    </div>
         <img class="clarendonQuest__M" src="#" alt="M with red serifs">
         <div class="clarendonQuestStepOne__container">
             <h3 class="clarendonQuestStepOne__title">
