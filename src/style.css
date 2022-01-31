@@ -50,7 +50,7 @@ html {
   }
 
   .landingPage__container{
-    height: 95vh;
+    height: 85vh;
     margin: var(--spacerSmall);
   }
 
@@ -210,6 +210,7 @@ html {
 
   .landingPage__container{
     text-align: center;
+    max-height: 95vh ;
   }
 
 
@@ -241,6 +242,7 @@ html {
     width: 4rem;
     height: 2rem;
     margin-top: 20vh;
+    
   }
 
    body p {
@@ -248,7 +250,7 @@ html {
   }
 
   .characteristics__container{
-    height: 80vh;
+    height: 90vh;
     text-align: start;
     margin-top: 7rem;
   }
@@ -305,6 +307,7 @@ html {
 
     .landingPage__arrow{
       margin-top: 6rem;
+      
     }
 
     .characteristics__container{
@@ -356,7 +359,7 @@ html {
       .landingPage__arrow{
         grid-area: 2 / 2 / 3 / 3;;
         display: block;
-        margin-left: 20%;
+        margin-left: 47%;
       }
 
       .landingPage__R{
@@ -365,6 +368,7 @@ html {
         max-width: 30rem;
         height: auto;
         width: 90%;
+        margin-top: -20vh;
       }
       
     }
@@ -372,12 +376,14 @@ html {
     
 
     @media only screen and (min-width:  900px){
-
+      .landingPage__container{
+        text-align: right;
+      }
 
       .landingPage__R{
         max-width: 25rem;
-        margin-left: 10%;
-        margin-top: -25%;
+        margin-left: 20%;
+        margin-top: -50%;
       }
 
       .landingPage__title{
@@ -385,7 +391,7 @@ html {
        /*  margin-left: 50%; */
         width: 100%;
         max-width: 40rem;
-        margin-left: 5vw;
+        margin-right: 5vw;
       }
 
       .landingPage__title-image{
@@ -394,7 +400,85 @@ html {
         max-width: 40rem;
       }
 
+      .history__container{
+        background-image: url("assets/img/LettersDesktop.svg");
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: 130vw auto;
+
+        height: 500vh;
+        text-align: center;
+      }
+
+      .history__container p{
+        /* margin-left: 29vw;
+        margin-right: 29vw; */
+        font-size: 2vw;
+      }
+
+      .history__paragraphOne{
+        margin-left: 29vw;
+        margin-right: 29vw;
+        padding-top: 15.5vw;
+      }
+
+      .history__paragraphTwo{
+        margin-left: 29vw;
+        margin-right: 29vw;
+        padding-top: 2vw;
+      }
+
+      .history__paragraphThree{
+        margin-left: 29vw;
+        margin-right: 29vw;
+        padding-top: 25vw;
+        font-size: 3.2vw
+      }
+
+      .history__paragraphFour{
+        padding-top: 46vw;
+
+        margin-left: 15vw;
+        margin-right: 17vw;
+
+        text-align: left;
+
+        /* margin-left: 5vw;
+        margin-right: 5vw; */
+      }
+
+      .history__paragraphFive{
+        padding-top: 30vw;
+
+        margin-left: 42vw;
+        margin-right: 40vw;
+
+        
+      }
+
     }
+
+    /* @media only screen and (min-width:  1000px){
+      .history__paragraphOne{
+        padding-top: 16vw;
+      }
+
+      .history__paragraphTwo{
+        padding-top: 3vw;
+      }
+
+      .history__paragraphThree{
+        padding-top: 25vw;        
+      }
+
+      .history__paragraphFour{
+        padding-top: 20vw;
+        margin-left: 0rem;
+        margin-right: 0rem;
+        padding-left: 20vw;
+        padding-right: 20vw;
+      }
+    } */
 
     @media only screen and (min-width:  1300px){
         .characteristics__container{
@@ -411,7 +495,7 @@ html {
 
         .characteristics__title{
           grid-area: 1 / 1 / 2 / 2;
-          margin-top: 3rem;
+          margin-top: 2.3rem;
         
         }
 
@@ -420,12 +504,42 @@ html {
           margin-top: 7rem;
           width: 100%;
           padding: 0.5rem;
-          font-size: 1.5rem;
+          font-size: 1.3rem;
         }
         .characteristics__gif{
           grid-area: 1 / 2 / 2 / 3;
         }
     }
+
+    @media only screen and (min-width:  1500px){
+      .characteristics__container{
+        display: grid; 
+        grid-template-columns: 0.4fr 1.6fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "titleParagraph gif";
+
+        padding: 2rem;
+        margin: 0 auto;
+        margin-top: 5rem;
+         
+      }
+
+      .characteristics__title{
+        grid-area: 1 / 1 / 2 / 2;
+        margin-top: 3rem;
+        font-size: 2.7rem;
+      }
+
+      .characteristics__paragraph{
+        margin-top: 7rem;
+        width: 100%;
+        padding: 0.5rem;
+        font-size: 1.7rem;
+      }
+      
+  }
   
     
     
