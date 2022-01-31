@@ -73,18 +73,24 @@ html {
   .navbar .menu-items {
     display: flex;
     background-color: rgba(255, 255, 255, 0.952);
+    background-image: url("assets/img/hamburgerBackground.png");
+    opacity: 0.80;
   }
   
   .navbar .nav-container li {
     list-style: none;
+    margin: 1rem
+  
   }
   
   .navbar .nav-container a {
     text-decoration: none;
-    color: #0e2431;
-    font-weight: 500;
+    color: #ff0000;
+    font-weight: 900;
     font-size: 1.2rem;
-    padding: 0.7rem;
+    font-size: 2rem;
+    padding: 1rem;
+
     
   }
   
@@ -93,7 +99,7 @@ html {
   }
 
   .menu-items li:hover{
-    color: red;
+    color: rgb(122, 0, 0);
   }
   
   .nav-container {
@@ -152,7 +158,7 @@ html {
   .navbar .menu-items {
     padding-top: 5rem;
     height: 100vh;
-    width: 100%;
+    width: 60%;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
@@ -178,10 +184,13 @@ html {
   
   .nav-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
+    
   }
   
   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(45deg);
+    transition: all 0.5s ease;
+    background: red;
   }
   
   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
@@ -190,10 +199,12 @@ html {
   
   .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
+    transition: all 0.5s ease;
+    background: red;
   }
   
   .nav-container input[type="checkbox"]:checked ~ .logo{
-    display: none;
+    color: red;
   }
 
 
@@ -229,7 +240,7 @@ html {
   .landingPage__arrow{
     width: 4rem;
     height: 2rem;
-    margin-top: 7rem;
+    margin-top: 20vh;
   }
 
    body p {
@@ -237,8 +248,9 @@ html {
   }
 
   .characteristics__container{
-    height: 64rem;
+    height: 80vh;
     text-align: start;
+    margin-top: 7rem;
   }
 
   .characteristics__gif{
@@ -269,6 +281,8 @@ html {
     font-style: normal;
   }
 
+  
+
   @media only screen and (min-width:  500px){
 
     .landingpage__title{
@@ -296,6 +310,7 @@ html {
     .characteristics__container{
       text-align: left;
       margin-left: 5%;
+
     }
 
     .characteristics__paragraph{
@@ -316,7 +331,6 @@ html {
       .landingPage__container {
         display: grid;
         grid-template-columns: 0.8fr 1.2fr;
-        grid-template-rows: 1.2fr 0.8fr;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
         margin-left: 0rem;
@@ -328,14 +342,13 @@ html {
       
 
       .landingPage__title{
-        grid-area: 1 / 1 / 2 / 3;
+        grid-area: 1 / 2 / 2 / 3;
         margin: 0 auto;
         margin-top: 0.2rem;
       }
 
       .landingPage__title-image{
-        grid-area: 1/2/2/3;
-        margin-left: 20%;
+        grid-area: 1 / 2 / 2 / 3;
         width: 60vw;
         max-width: 30rem;
       }
@@ -351,28 +364,34 @@ html {
         display: grid;
         max-width: 30rem;
         height: auto;
-        width: 80%;
-        max-width: 25rem;
-        margin-left: 10%;
-        margin-top: -5%;
-      }
-
-      .characteristics__container{
-        margin-top: 5rem;
+        width: 90%;
       }
       
     }
 
-    @media only screen and (min-width:  700px){
+    
+
+    @media only screen and (min-width:  900px){
 
 
       .landingPage__R{
-        max-width: 30rem;
-        height: auto;
-        width: 60%;
         max-width: 25rem;
         margin-left: 10%;
-        margin-top: -5%;
+        margin-top: -25%;
+      }
+
+      .landingPage__title{
+        align-self: flex-end;
+       /*  margin-left: 50%; */
+        width: 100%;
+        max-width: 40rem;
+        margin-left: 5vw;
+      }
+
+      .landingPage__title-image{
+        align-self: flex-end;
+        width: 90%;
+        max-width: 40rem;
       }
 
     }
@@ -385,15 +404,20 @@ html {
           gap: 0px 0px; 
           grid-template-areas: 
             "titleParagraph gif";
+
+          padding: 1rem;
+           
         }
 
         .characteristics__title{
           grid-area: 1 / 1 / 2 / 2;
+          margin-top: 3rem;
+        
         }
 
         .characteristics__paragraph{
           grid-area: 1 / 1 / 2 / 2;
-          margin-top: 4rem;
+          margin-top: 7rem;
           width: 100%;
           padding: 0.5rem;
           font-size: 1.5rem;
