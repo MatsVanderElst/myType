@@ -49,6 +49,10 @@ html {
   
   }
 
+  .hide{
+    display: none;
+  }
+
   .landingPage__container{
     height: 85vh;
     margin: var(--spacerSmall);
@@ -401,13 +405,27 @@ html {
       }
 
       .history__container{
-        background-image: url("assets/img/LettersDesktop.svg");
+        background-image: url("assets/img/LettersBackgroundDesktop.png");
         background-position: center top;
         background-repeat: no-repeat;
         background-size: 130vw auto;
 
         height: 500vh;
         text-align: center;
+      }
+
+      .history__title{
+        font-size: 2.5vw;
+        font-weight: 800;
+        font-family: clarendon;
+      }
+
+      .history__title{
+        font-size: 2.5vw;
+        font-weight: 800;
+        font-family: clarendon;
+        font-size: 3vw;
+        margin-top: -3rem;
       }
 
       .history__container p{
@@ -419,7 +437,7 @@ html {
       .history__paragraphOne{
         margin-left: 29vw;
         margin-right: 29vw;
-        padding-top: 15.5vw;
+        padding-top: 13.5vw;
       }
 
       .history__paragraphTwo{

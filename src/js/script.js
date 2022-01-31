@@ -28,7 +28,16 @@ const submitOrder = async () => {
     console.log(response);
     
     //show user that order was succesfully submitted 
-};
+    let confirmation = `thanks ${name}, your order has been submitted!
+    The package will arrive at: ${address},${postalCode},${city},${country}`;
+
+    const formDiv = document.querySelector('.clarendonQuestStepOne__form');
+    const confirmationDiv = document.querySelector('.clarendonQuestStepOne__confirmationMessage');
+    
+    formDiv.classList.add("hide");
+    confirmationDiv.innerHTML = confirmation;
+
+}
 
 export const init = () => {
     console.log('start executing JavaSript');

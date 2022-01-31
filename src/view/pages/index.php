@@ -48,6 +48,7 @@
         <img class="characteristics__gif" src="assets/img/AaBb.gif" ></img> <!-- https://stackoverflow.com/questions/35733029/cross-browser-animated-gif-on-hover-reverse-when-mouse-leaves -->
         </div>
         <!-- ===> svg lettes achtergrond aanpassen aan schermgrote -->
+        <h2 class="history__title">History</h2>
     <div class="history__container"> 
         <p class="history__paragraphOne"><?php echo $textArray['history__paragraphOne']; ?></p>
         <p class="history__paragraphTwo"><?php echo $textArray['history__paragraphTwo']; ?></p>
@@ -70,7 +71,7 @@
                 <img class="clarendonQuestStepOne__title-image" src="#" alt="step one">
             </h3>
             <p class="clarendonQuestStepOne__paragraph"><?php echo $textArray['clarendonQuestStepOne__paragraph']; ?></p>
-        
+            <p class="clarendonQuestStepOne__confirmationMessage"></p>
             <form class="clarendonQuestStepOne__form" action="index.php?page=order" method="get">
                 <article class="formcontent">
                     <div class="formStyle">
