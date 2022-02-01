@@ -28,9 +28,9 @@
                     <img class="landingPage__slantedLogo" alt="slanted logo" src="assets/img/slantedLogo.svg">    
                 </div>
                 <div class="menu-items nav-menu">
-                    <li><a href="#">Characteristics</a></li>
-                    <li><a href="#">History</a></li>
-                    <li><a href="#">Clarendon Quest</a></li>
+                    <li><a href="#characteristics__container">Characteristics</a></li>
+                    <li><a href="#history__title">History</a></li>
+                    <li><a href="#clarendonQuest__container">Clarendon Quest</a></li>
                 </div>
             </div>
         </div>
@@ -42,13 +42,13 @@
         <img class="landingPage__R" src="assets/img/rImage.png" alt="capital R">
         <img class="landingPage__arrow" src="assets/img/arrow.svg" alt="arrow">
     </div>
-    <div class="characteristics__container">
+    <div class="characteristics__container" id="characteristics__container">
         <h2 class="characteristics__title">Characteristics</h2>
         <p class="characteristics__paragraph"><?php echo $textArray['characteristics__paragraph']; ?></p>
-        <img class="characteristics__gif" src="assets/img/AaBb.gif" ></img> <!-- https://stackoverflow.com/questions/35733029/cross-browser-animated-gif-on-hover-reverse-when-mouse-leaves -->
+        <img class="characteristics__gif" src="assets/img/Aa.gif" ></img> <!-- https://stackoverflow.com/questions/35733029/cross-browser-animated-gif-on-hover-reverse-when-mouse-leaves -->
         </div>
         <!-- ===> svg lettes achtergrond aanpassen aan schermgrote -->
-        <h2 class="history__title">History</h2>
+        <h2 class="history__title" id="history__title">History</h2>
     <div class="history__container"> 
         <p class="history__paragraphOne"><?php echo $textArray['history__paragraphOne']; ?></p>
         <p class="history__paragraphTwo"><?php echo $textArray['history__paragraphTwo']; ?></p>
@@ -56,7 +56,7 @@
         <p class="history__paragraphFour"><?php echo $textArray['history__paragraphFour']; ?></p>
         <p class="history__paragraphFive"><?php echo $textArray['history__paragraphFive']; ?></p>
     </div>
-    <div class="clarendonQuest__container">
+    <div class="clarendonQuest__container" id="clarendonQuest__container">
         <h2 class="clarendonQuest__title">
             <img class="clarendonQuest__title-image" src="assets/img/clarendonQuestTitleImage.png" alt="Clarendon Quest">
         </h2>
@@ -110,16 +110,11 @@
             </h1>
             <p class="clarendonQuestStepTwo__paragraph"><?php echo $textArray['clarendonQuestStepTwo__paragraph']; ?></p>    
             <img class="clarendonQuestStepTwo__stickerImage" src="assets/img/clarendonSticker.png" alt="clarendon quest sticker">
-            <img class="clarendonQuestStepTwo__stickerGif" src="assets/img/stickerAnimation.gif" alt="clarendon quest sticker gif">
         </div>
         <div class="clarendonQuestStepThree__container">
             <img class="clarendonQuestStepThree__title-image" src="assets/img/step3.png" alt="step three">
             <p class="clarendonQuestStepThree__paragraph"><?php echo $textArray['clarendonQuestStepThree__paragraph']; ?></p>
-            <img class="clarendonQuestStepThree__stickerImage" src="#" alt="clarendon quest sticker">
-            <form class="clarendonQuestStepThree__form" action="index.php?page=upload" method="post" enctype="multipart/form-data"> 
-                <input type="file" name="file" required>
-                <button type="submit">Submit</button>
-            </form>
+            <img class="clarendonQuestStepThree__stickerImage" src="assets/img/stickerAnimation1.gif" alt="clarendon quest sticker">
         </div>
     </div>
     <div class="gallery__container">
