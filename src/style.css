@@ -317,6 +317,7 @@ html {
     width: 100vw;
     margin: 0 auto;
     border-top: solid red 0.2rem;
+    
   }
 
   .clarendonQuest__M{
@@ -332,6 +333,7 @@ html {
 
 
   .clarendonQuest__title-image{
+    
     width: 90%;
   }
 
@@ -456,21 +458,26 @@ html {
     
 
     .clarendonQuest__paragraph{
-      margin: 8vw;
+      margin: 0 auto;
+      margin-top: 3vh;
+      max-width: 30rem;
       font-weight: 700;
       font-size: 4vw; 
       font-size: 1.75rem;
     }
   
+    
+    
     .clarendonQuest__title-image{
       width: 90%;
       max-width: 35rem;
+      margin: 0 auto;
     }
   
     .clarendonQuest__findOut{
       font-size: 1.75rem;
       font-weight: 700;
-      margin-top: 20vh; 
+      margin-top: 17vh; 
       
     }
   
@@ -676,17 +683,61 @@ html {
         text-align: left;
         height: 100vh; 
         margin: auto;
+
+        display: grid; 
+        grid-template-columns: 1.3fr 0.7fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "titleParagraph M";
+      }
+
+      .clarendonQuest__title{
+        width:60vw;
+        max-width: 40rem;
+        height: fit-content;
+        grid-area: 1 / 1 / 2 / 2;
+        border-top: none;
+      }
+
+      .clarendonQuest__title-image{
+        width: 100%;
       }
 
       .clarendonQuest__paragraph{
-        margin: 2vw;
-        font-size: 2vw;
-        width: 84vw;
+        margin: 0 auto;
+        margin-top: 35vh;
+        font-size: 1.5rem;
+        width: auto;
+        max-width: 30rem;
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: center;
+        
       }
 
       .clarendonQuest__findOut{
+        margin: 0 auto;
+        margin-top: 80vh;
+        
         font-size: 3vw;
-    } 
+        grid-area: 1 / 1 / 2 / 2;
+      } 
+
+      .clarendonQuest__arrow{
+        margin: 0 auto;
+        margin-top: 85vh;
+
+        grid-area: 1 / 1 / 2 / 2;
+        width: 7vw;
+      }
+
+      .clarendonQuest__M{
+        display: block;
+        width: 45vh;
+        margin-top: 9vh;
+        margin-right: -0.1rem;
+      }
+
 
     }
 
@@ -711,6 +762,14 @@ html {
         padding-right: 20vw;
       }
     } */
+
+    @media only screen and (min-width: 1100px){
+      .clarendonQuest__M{
+        align-self: center right;
+        margin-left: 7vw;
+      }
+
+    }
 
     @media only screen and (min-width:  1300px){
         .characteristics__container{
@@ -743,6 +802,27 @@ html {
         .characteristics__gif{
           grid-area: 1 / 2 / 2 / 3;
         }
+
+        /* .clarendonQuest__container{
+          padding-right: 20vw;
+        } */
+
+        .clarendonQuest__title{
+          margin-left: 5vw;
+        }
+
+        .clarendonQuest__paragraph{
+          margin-left: 12vw;
+        }
+
+        .clarendonQuest__findOut{
+          margin-left: 21vw;
+        }
+
+        .clarendonQuest__arrow{
+          margin-left: 27vw;
+          margin-top: 87vh;
+        }
     }
 
     @media only screen and (min-width:  1500px){
@@ -772,6 +852,21 @@ html {
         padding: 0.5rem;
         font-size: 1.7rem;
       }
+
+      .clarendonQuest__container{
+        text-align: left;
+        height: 100vh; 
+        margin: auto;
+
+        display: grid; 
+        grid-template-columns: 2fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "titleParagraph M";
+      }
+
+      
       
   }
   

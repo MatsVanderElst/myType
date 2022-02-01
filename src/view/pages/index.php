@@ -60,7 +60,7 @@
         <h2 class="clarendonQuest__title">
             <img class="clarendonQuest__title-image" src="assets/img/clarendonQuestTitleImage.png" alt="Clarendon Quest">
         </h2>
-        <img class="clarendonQuest__M" alt="half M serifs" src="#">
+        <img class="clarendonQuest__M" alt="half M serifs" src="assets/img/capitalM.png">
         <p class="clarendonQuest__paragraph"><?php echo $textArray['clarendonQuest__paragraph']; ?></p>
         <p class="clarendonQuest__findOut"> find out how!</p>
         <img class="clarendonQuest__arrow" src="assets/img/arrow.svg" alt="arrow">
