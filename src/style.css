@@ -49,9 +49,7 @@ html {
   
   }
 
-  .hide{
-    display: none;
-  }
+  
 
   .landingPage__container{
     height: auto;
@@ -348,6 +346,98 @@ html {
     width: 20vw;
   }
 
+  .clarendonQuestStepOne__container{
+    height: 100vh;
+    text-align: center;
+    margin-top: 10vh;
+    
+  }
+  
+  .clarendonQuestStepOne__title{
+    width: 50vw;
+    text-align: center;
+    margin: 0 auto;
+    
+  }
+  
+  .clarendonQuestStepOne__title-image{
+    width: 95%;
+    max-width: 12rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 5% ;
+  }
+
+  .clarendonQuestStepOne__paragraph{
+    font-size: 4vw;
+    margin-top: 10vh;
+    max-width: 30rem;
+    margin: 10vw;
+  }
+
+  .clarendonQuestStepOne__form{
+    font-size: 4vw;
+    max-width: 60rem;
+    margin: 8vw auto;
+    margin-top: 5vh;
+    border-radius: 5px;
+    /* background-image: url("assets/img/hamburgerBackground.png"); */
+    background-color: rgba(255, 255, 255, 0.171);
+    border: 1vw red solid; 
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    
+    height: 40vh;
+  }
+
+  .formcontent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 30vh;
+    text-align: left;
+  }
+
+  .formStyle{
+    margin-left: 7vw;
+  }
+
+  .submitButton{
+    border-radius: 1.3rem;
+  	border: 1px solid #ff0000;
+  	background-image: url("assets/img/hamburgerBackground.png");
+  	color: #FFFFFF;
+  	font-size: 1rem;
+	  font-weight: bold;
+/* 	  padding: 12px 45px;
+ */	  letter-spacing: 1px;
+    text-transform: uppercase;
+	  transition: transform 80ms ease-in;
+
+
+    height: 6vh;
+    width: 20vw;
+    margin: 0 auto;
+
+  }
+
+  .clarendonQuestStepOne__stickerpack{
+    display: none;
+  }
+
+
+  .clarendonQuestStepTwo__title-image{
+    width: 50vw;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .clarendonQuestStepThree__title-image{
+    width: 50vw;
+    text-align: center;
+    margin: 0 auto; 
+  }
 
   @media only screen and (max-width: 500px){
   
@@ -400,6 +490,7 @@ html {
       margin-right: 20vw;
     }
 
+    
     
   }
 
@@ -483,6 +574,21 @@ html {
   
     .clarendonQuest__arrow{
       width: 10vw;
+    }
+
+
+    .clarendonQuestStepOne__paragraph{
+      width: 80vw;
+      max-width: 30rem; 
+      margin: 0 auto;
+      margin-top: 4vh;
+      font-size: 1.6rem;
+      
+    }
+
+    .clarendonQuestStepOne__form{
+      max-width: 35rem;
+      font-size: 1.3rem;
     }
   }
 
@@ -578,6 +684,8 @@ html {
         width: 90%;
         margin-top: -20vh;
       }
+
+      
 
       
       
@@ -738,6 +846,61 @@ html {
         margin-right: -0.1rem;
       }
 
+      .clarendonQuestStepOne__container{
+        height: 100vh;
+        display: grid; 
+        grid-template-columns: 0.9fr 1.1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "step img";
+        text-align: left;
+      }
+      
+      .clarendonQuestStepOne__title{
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: left;
+      }
+
+      .clarendonQuestStepOne__title-image{
+        margin-left: 8vw;
+        max-width: 18rem;
+      }
+      
+      .clarendonQuestStepOne__form{
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 1.2rem;
+        text-align: left;
+        margin-top: 40vh;
+        border-width: 0.2rem;
+      }
+      
+      .clarendonQuestStepOne__paragraph{
+        grid-area: 1 / 2 / 2 / 3;
+        font-size: 1.5rem;
+        margin: 5vh auto;
+        margin-top: 5vh;
+        padding-right: 5vh;
+
+/*         margin-left: -10vw;
+ */        width: 50vw;
+        max-width: 50rem;
+
+      }
+
+      .clarendonQuestStepOne__stickerpack{
+        display: block;
+        grid-area: 1 / 2 / 2 / 3;
+
+        width: 47vw;
+        max-width: 35rem;
+        
+        margin-top: 30vh;
+        margin-left: 5vh;
+        
+        align-self: right;
+      }
+
 
     }
 
@@ -790,8 +953,25 @@ html {
         width: 30vw;
       }
 
+      .clarendonQuest__container{
+        text-align: left;
+        height: 100vh; 
+        margin: auto;
+
+        display: grid; 
+        grid-template-columns: 2.2fr 0.8fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "titleParagraph M";
+
+          text-align: center;
+      }
+
 
     }
+
+    
 
     @media only screen and (min-width:  1300px){
         .characteristics__container{
@@ -850,6 +1030,8 @@ html {
           margin-top: 87vh;
         }
 
+        
+
     }
 
     @media only screen and (min-width:  1500px){
@@ -881,12 +1063,23 @@ html {
       }
 
       .history__paragraphFour{
-        padding-top: 47.5vw
+        padding-top: 47vw
       }
 
       
   }
   
     
-    
+  .hide{
+    display: none;
+  }
+
+  .formdiv{
+    display: block;
+    margin: 0 auto;
+    margin-top: 5vh;
+    font-size: 2.7vh;
+    width: 80vw;
+    max-width: 35rem;
+  }
   

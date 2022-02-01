@@ -67,7 +67,7 @@
     </div>
         <div class="clarendonQuestStepOne__container">
             <h3 class="clarendonQuestStepOne__title">
-                <img class="clarendonQuestStepOne__title-image" src="#" alt="step one">
+                <img class="clarendonQuestStepOne__title-image" src="assets/img/step1.png" alt="step one">
             </h3>
             <p class="clarendonQuestStepOne__paragraph"><?php echo $textArray['clarendonQuestStepOne__paragraph']; ?></p>
             <p class="clarendonQuestStepOne__confirmationMessage"></p>
@@ -102,17 +102,16 @@
                 </article>
                 <input type="submit" value="submit" class="submitButton">
             </form>
-
-            <img class="clarendonQuestStepOne__stickerpack" src="#" alt="stickerPack">
+            <img class="clarendonQuestStepOne__stickerpack" src="assets/img/clarendonStickerPack.png" alt="stickerPack">
         </div>
         <div class="clarendonQuestStepTwo__container">
-            <img class="clarendonQuestStepTwo__title-image" src="#" alt="step two">
+            <img class="clarendonQuestStepTwo__title-image" src="assets/img/step2.png" alt="step two">
             <p class="clarendonQuestStepTwo__paragraph"><?php echo $textArray['clarendonQuestStepTwo__paragraph']; ?></p>    
             <img class="clarendonQuestStepTwo__stickerImage" src="#" alt="clarendon quest sticker">
             <img class="clarendonQuestStepTwo__stickerGif" src="#" alt="clarendon quest sticker gif">
         </div>
         <div class="clarendonQuestStepThree__container">
-            <img class="clarendonQuestStepThree__title-image" src="#" alt="step three">
+            <img class="clarendonQuestStepThree__title-image" src="assets/img/step3.png" alt="step three">
             <p class="clarendonQuestStepThree__paragraph"><?php echo $textArray['clarendonQuestStepThree__paragraph']; ?></p>
             <img class="clarendonQuestStepThree__stickerImage" src="#" alt="clarendon quest sticker">
             <form class="clarendonQuestStepThree__form" action="index.php?page=upload" method="post" enctype="multipart/form-data"> 

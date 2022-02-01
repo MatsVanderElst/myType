@@ -35,6 +35,7 @@ const submitOrder = async () => {
     const confirmationDiv = document.querySelector('.clarendonQuestStepOne__confirmationMessage');
     
     formDiv.classList.add("hide");
+    confirmationDiv.classList.add("formdiv");
     confirmationDiv.innerHTML = confirmation;
 
 }
