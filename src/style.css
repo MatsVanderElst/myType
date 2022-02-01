@@ -763,11 +763,33 @@ html {
       }
     } */
 
+    @media only screen and (min-width: 950px){
+      .clarendonQuest__container{
+        text-align: left;
+        height: 100vh; 
+        margin: auto;
+
+        display: grid; 
+        grid-template-columns: 2fr 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "titleParagraph M";
+
+          text-align: center;
+      }
+
+    }
+
     @media only screen and (min-width: 1100px){
+    
+      
       .clarendonQuest__M{
         align-self: center right;
         margin-left: 7vw;
+        width: 30vw;
       }
+
 
     }
 
@@ -808,11 +830,15 @@ html {
         } */
 
         .clarendonQuest__title{
-          margin-left: 5vw;
+          margin: 0 auto;
+          max-width: 45rem;
         }
-
+        
         .clarendonQuest__paragraph{
-          margin-left: 12vw;
+          max-width: 45rem;
+          font-size: 1.9rem;
+          margin: 0 auto;
+          margin-top: 42vh;
         }
 
         .clarendonQuest__findOut{
@@ -823,6 +849,7 @@ html {
           margin-left: 27vw;
           margin-top: 87vh;
         }
+
     }
 
     @media only screen and (min-width:  1500px){
@@ -853,20 +880,10 @@ html {
         font-size: 1.7rem;
       }
 
-      .clarendonQuest__container{
-        text-align: left;
-        height: 100vh; 
-        margin: auto;
-
-        display: grid; 
-        grid-template-columns: 2fr 1fr; 
-        grid-template-rows: 1fr; 
-        gap: 0px 0px; 
-        grid-template-areas: 
-          "titleParagraph M";
+      .history__paragraphFour{
+        padding-top: 47.5vw
       }
 
-      
       
   }
   

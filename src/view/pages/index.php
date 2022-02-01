@@ -65,7 +65,6 @@
         <p class="clarendonQuest__findOut"> find out how!</p>
         <img class="clarendonQuest__arrow" src="assets/img/arrow.svg" alt="arrow">
     </div>
-        <img class="clarendonQuest__M" src="#" alt="M with red serifs">
         <div class="clarendonQuestStepOne__container">
             <h3 class="clarendonQuestStepOne__title">
                 <img class="clarendonQuestStepOne__title-image" src="#" alt="step one">
