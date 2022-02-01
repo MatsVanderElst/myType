@@ -16,8 +16,11 @@ class PagesController extends Controller
     
     $this->set('countries', $countries);
     
-    
-    $language = $_GET['language'];
+    if (isset($_GET['language'])) {
+      $language = $_GET['language'];
+    } else {
+      $language = NULL;
+    }
     
     if ($language != NULL && in_array($language, ['en','fr','de'])) {
       $_SESSION['language'] = $language;
