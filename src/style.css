@@ -407,8 +407,8 @@ html {
     border-radius: 1.3rem;
   	border: 1px solid #ff0000;
   	background-image: url("assets/img/hamburgerBackground.png");
-  	color: #FFFFFF;
-  	font-size: 1rem;
+  	color: #ff0000;
+  	font-size: 0.7rem;
 	  font-weight: bold;
 /* 	  padding: 12px 45px;
  */	  letter-spacing: 1px;
@@ -427,19 +427,59 @@ html {
   }
 
 
-  .clarendonQuestStepTwo__title-image{
+  
+
+
+
+
+
+
+  .clarendonQuestStepTwo__container{
+    height: 100vh;
+    text-align: center;
+    margin-top: 10vh;
+    
+  }
+  
+  .clarendonQuestStepTwo__title{
     width: 50vw;
     text-align: center;
     margin: 0 auto;
+    
+  }
+  
+  .clarendonQuestStepTwo__title-image{
+    width: 95%;
+    max-width: 18rem;
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 5% ;
   }
 
-  .clarendonQuestStepThree__title-image{
-    width: 50vw;
-    text-align: center;
-    margin: 0 auto; 
+  .clarendonQuestStepTwo__paragraph{
+    font-size: 4vw;
+    max-width: 30rem;
+    margin: 10vw;
+    margin-bottom: 5vh;
+  }
+
+  .clarendonQuestStepTwo__stickerImage{
+    display: none;
+  }
+
+  .clarendonQuestStepTwo__stickerGif{
+    max-width: 80vw;
+    margin: 8vw auto;
+    margin-top: 5vh;
+    
+    height: 30vh;
+    
+    
   }
 
   @media only screen and (max-width: 500px){
+
+    
   
     .history__container p{
       font-size: 4vw;
@@ -587,12 +627,29 @@ html {
     }
 
     .clarendonQuestStepOne__form{
-      max-width: 35rem;
+      max-width: 30rem;
       font-size: 1.3rem;
     }
+
+    .clarendonQuestStepTwo__paragraph{
+      width: 80vw;
+      max-width: 30rem; 
+      margin: 0 auto;
+      margin-top: 4vh;
+      font-size: 1.6rem;
+      
+    }
+
+
+
+    
   }
 
   @media only screen and (min-width:  500px){
+
+    .submitButton{
+      font-size: 1rem;
+    }
 
     .landingpage__title{
       text-align: none;
@@ -864,7 +921,7 @@ html {
 
       .clarendonQuestStepOne__title-image{
         margin-left: 8vw;
-        max-width: 18rem;
+        max-width: 16rem;
       }
       
       .clarendonQuestStepOne__form{
@@ -899,6 +956,56 @@ html {
         margin-left: 5vh;
       }
 
+      .clarendonQuestStepTwo__container{
+        height: 100vh;
+        display: grid; 
+        grid-template-columns: 0.9fr 1.1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 0px; 
+        
+        margin-top: 10vw;
+        text-align: left;
+      }
+
+      .clarendonQuestStepTwo__title{
+        grid-area: 1 / 1 / 2 / 2;
+        text-align: left;
+      }
+
+      .clarendonQuestStepTwo__title-image{
+        margin-left: 8vw;
+        max-width: 18rem;
+      }
+
+      .clarendonQuestStepTwo__stickerGif{
+        grid-area: 1 / 1 / 2 / 2;
+        font-size: 1.2rem;
+        text-align: left;
+        margin-top: 40vh;
+        border-width: 0.2rem;
+      }
+
+      .clarendonQuestStepTwo__paragraph{
+        grid-area: 1 / 2 / 2 / 3;
+        font-size: 1.5rem;
+        margin: 5vh auto;
+        margin-top: 5vh;
+        padding-right: 5vh;
+        width: 50vw;
+        max-width: 50rem;
+
+      }
+
+      .clarendonQuestStepTwo__stickerImage{
+        display: block;
+        grid-area: 1 / 2 / 2 / 3;
+
+        width: 40vw;
+        max-width: 35rem;
+        
+        margin-top: 30vh;
+        margin-left: 5vh;
+      }
 
     }
 
@@ -989,6 +1096,23 @@ html {
         
       }
 
+      .clarendonQuestStepTwo__title-image{
+        width: 14rem;
+        margin-left: 2vw;
+      }
+
+      .clarendonQuestStepTwo__paragraph{
+        grid-area: 1 / 1 / 2 / 2 ;
+        margin-top: 22vh;
+        margin-left: 4vw;
+      }
+
+      .clarendonQuestStepTwo__stickerGif{
+        margin-top: 40vh;
+        width: 45vw;
+        height: auto;
+      }
+
       
 
 
@@ -1060,11 +1184,34 @@ html {
           margin-top: 1vh;
           align-content: right;
         }
+        
 
         .clarendonQuestStepOne__paragraph{
           font-size: 3vh;
           margin-top: 30vh;
           margin-left: 4vw ;
+        }
+
+        .clarendonQuestStepTwo__paragraph{
+          font-size: 3vh;
+          margin-top: 30vh;
+          margin-left: 4vw ;
+        }
+
+        .clarendonQuestStepTwo__title-image{
+          max-width: 20rem;
+          width: 18rem;
+        }
+
+        .clarendonQuestStepTwo__stickerImage{
+          margin-top: 30vh;
+          width: 40vw;
+          
+        }
+
+        .clarendonQuestStepTwo__stickerGif{
+          max-width: 30rem;
+          margin-left: 8vw;
         }
 
         
@@ -1107,6 +1254,10 @@ html {
         margin-right: -10vw;
       }
 
+      .clarendonQuestStepTwo__stickerImage{
+        
+        margin-left: 10vw;
+      }
       
   }
 

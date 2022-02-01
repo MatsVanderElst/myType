@@ -105,10 +105,12 @@
             <img class="clarendonQuestStepOne__stickerpack" src="assets/img/clarendonStickerPack.png" alt="stickerPack">
         </div>
         <div class="clarendonQuestStepTwo__container">
-            <img class="clarendonQuestStepTwo__title-image" src="assets/img/step2.png" alt="step two">
+            <h1 class="clarendonQuestStepTwo__title">
+                <img class="clarendonQuestStepTwo__title-image" src="assets/img/step2.png" alt="step two">
+            </h1>
             <p class="clarendonQuestStepTwo__paragraph"><?php echo $textArray['clarendonQuestStepTwo__paragraph']; ?></p>    
-            <img class="clarendonQuestStepTwo__stickerImage" src="#" alt="clarendon quest sticker">
-            <img class="clarendonQuestStepTwo__stickerGif" src="#" alt="clarendon quest sticker gif">
+            <img class="clarendonQuestStepTwo__stickerImage" src="assets/img/clarendonSticker.png" alt="clarendon quest sticker">
+            <img class="clarendonQuestStepTwo__stickerGif" src="assets/img/stickerAnimation.gif" alt="clarendon quest sticker gif">
         </div>
         <div class="clarendonQuestStepThree__container">
             <img class="clarendonQuestStepThree__title-image" src="assets/img/step3.png" alt="step three">
