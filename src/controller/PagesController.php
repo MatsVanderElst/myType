@@ -19,16 +19,18 @@ class PagesController extends Controller
     
     $language = $_GET['language'];
     
-    if ($language != NULL && in_array($language, ['nl','fr','de'])) {
+    if ($language != NULL && in_array($language, ['en','fr','de'])) {
       $_SESSION['language'] = $language;
     } else {
-      $language = $_SESSION['language'];
-      if ($language == NULL) {
-        $_SESSION['language'] = 'nl';
+      if (isset( $_SESSION['language'])) {
+        $language = $_SESSION['language'];
+      } else {
+        $_SESSION['language'] = 'en';
+        $language = $_SESSION['language'];
       } 
     }
 
-    $textCollection = Text::where('language','=',$_SESSION['language'])->get();
+    $textCollection = Text::where('language','=',$language)->get();
     $textArray = $textCollection->mapWithKeys(function ($item, $key) {
       return [$item['name'] => $item['content']]; 
     });

@@ -28,9 +28,9 @@
                     <img class="landingPage__slantedLogo" alt="slanted logo" src="assets/img/slantedLogo.svg">    
                 </div>
                 <div class="menu-items nav-menu">
-                    <li><a href="#characteristics__container">Characteristics</a></li>
-                    <li><a href="#history__title">History</a></li>
-                    <li><a href="#clarendonQuest__container">Clarendon Quest</a></li>
+                    <li><a href="#characteristics__container"><?php echo $textArray['menu-items-1'];?></a></li>
+                    <li><a href="#history__title"><?php echo $textArray['menu-items-2']; ?></a></li>
+                    <li><a href="#clarendonQuest__container"><?php echo $textArray['menu-items-3']; ?></a></li>
                     <li><a href="index.php?language=en">ENG</a>/<a href="index.php?language=fr">FR</a>/<a href="index.php?language=de">DE</a></li>
                 </div>
             </div>
@@ -48,7 +48,6 @@
         <p class="characteristics__paragraph"><?php echo $textArray['characteristics__paragraph']; ?></p>
         <img class="characteristics__gif" src="assets/img/Aa.gif" ></img> <!-- https://stackoverflow.com/questions/35733029/cross-browser-animated-gif-on-hover-reverse-when-mouse-leaves -->
         </div>
-        <!-- ===> svg lettes achtergrond aanpassen aan schermgrote -->
         <h2 class="history__title" id="history__title">History</h2>
     <div class="history__container"> 
         <p class="history__paragraphOne"><?php echo $textArray['history__paragraphOne']; ?></p>
