@@ -74,6 +74,7 @@ html {
     justify-content: space-between;
     align-items: center;
     height: 4rem;
+    position: fixed;
   }
   
   .navbar .menu-items {
@@ -85,9 +86,12 @@ html {
   
   .navbar .nav-container li {
     list-style: none;
-    margin: 1rem
-  
-  }
+    padding: 10vw;
+    padding: 1vw;
+    background-color:rgb(255, 255, 255);
+    width: max-content;
+    margin: 0 auto;
+    }
   
   .navbar .nav-container a {
     text-decoration: none;
@@ -166,7 +170,7 @@ html {
   .navbar .menu-items {
     padding-top: 5rem;
     height: 100vh;
-    width: 60%;
+    width: 100%;
     transform: translate(-150%);
     display: flex;
     flex-direction: column;
@@ -307,21 +311,39 @@ html {
   .clarendonQuest__container{
     height: 100vh;
     text-align: center;
-    
   }
   
   .clarendonQuest__title{
     width: 100vw;
     margin: 0 auto;
-
+    border-top: solid red 0.2rem;
   }
+
   .clarendonQuest__M{
     display: none;
   }
 
-  .clarendonQuest__title-image{
-    width: 90vw;
+  .clarendonQuest__paragraph{
+    margin-top: 20vh;
+    
+    font-weight: 700;
+    font-size: 5vw;
+  }
 
+
+  .clarendonQuest__title-image{
+    width: 90%;
+  }
+
+  .clarendonQuest__findOut{
+    font-size: 5vw;
+    font-weight: 700;
+    margin-top: 20vh;
+    margin-bottom: 5%;
+  }
+
+  .clarendonQuest__arrow{
+    width: 20vw;
   }
 
 
@@ -375,6 +397,8 @@ html {
       margin-left: 5vw;
       margin-right: 20vw;
     }
+
+    
   }
 
   @media only screen and (max-width: 900px) and (min-width: 500px) {
@@ -382,6 +406,7 @@ html {
     .history__container p{
       font-size: 3.2vw;
       padding: 3vw;
+      margin-bottom: 10vh;
      /*  background-color: rgba(255, 255, 255, 0.685); */
      /*  border-radius: 25px;
       border: red solid 0.5vw;
@@ -427,6 +452,31 @@ html {
       margin-left: 4vw;
       margin-right: 58vw;
     }
+
+    
+
+    .clarendonQuest__paragraph{
+      margin: 8vw;
+      font-weight: 700;
+      font-size: 4vw; 
+      font-size: 1.75rem;
+    }
+  
+    .clarendonQuest__title-image{
+      width: 90%;
+      max-width: 35rem;
+    }
+  
+    .clarendonQuest__findOut{
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin-top: 20vh; 
+      
+    }
+  
+    .clarendonQuest__arrow{
+      width: 10vw;
+    }
   }
 
   @media only screen and (min-width:  500px){
@@ -457,6 +507,9 @@ html {
     .characteristics__container{
       text-align: left;
       margin-left: 5%;
+      padding-bottom: 60vw;
+      height: 100vh;
+      padding-bottom: 20vh;
 
     }
 
@@ -468,6 +521,10 @@ html {
 
     .characteristics__gif{
       width: 90%;
+    }
+
+    .history__arrow{
+      margin-top: 10vw;
     }
   }
   
@@ -514,6 +571,8 @@ html {
         width: 90%;
         margin-top: -20vh;
       }
+
+      
       
     }
 
@@ -549,9 +608,9 @@ html {
         background-position: center top;
         background-repeat: no-repeat;
         background-size: 130vw auto;
-
+        padding-bottom: 30vw;
         height: auto;
-        padding-bottom: 5vw;
+        
         text-align: center;
       }
 
@@ -612,6 +671,22 @@ html {
 
         
       }
+
+      .clarendonQuest__container{
+        text-align: left;
+        height: 100vh; 
+        margin: auto;
+      }
+
+      .clarendonQuest__paragraph{
+        margin: 2vw;
+        font-size: 2vw;
+        width: 84vw;
+      }
+
+      .clarendonQuest__findOut{
+        font-size: 3vw;
+    } 
 
     }
 

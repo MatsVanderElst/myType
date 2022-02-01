@@ -57,13 +57,13 @@
         <p class="history__paragraphFive"><?php echo $textArray['history__paragraphFive']; ?></p>
     </div>
     <div class="clarendonQuest__container">
-        <h2 class="clarendonQuest__title">Clarendon Quest
+        <h2 class="clarendonQuest__title">
             <img class="clarendonQuest__title-image" src="assets/img/clarendonQuestTitleImage.png" alt="Clarendon Quest">
         </h2>
         <img class="clarendonQuest__M" alt="half M serifs" src="#">
         <p class="clarendonQuest__paragraph"><?php echo $textArray['clarendonQuest__paragraph']; ?></p>
         <p class="clarendonQuest__findOut"> find out how!</p>
-        <img class="clarendonQuest__arrow" src="#.svg" alt="arrow">
+        <img class="clarendonQuest__arrow" src="assets/img/arrow.svg" alt="arrow">
     </div>
         <img class="clarendonQuest__M" src="#" alt="M with red serifs">
         <div class="clarendonQuestStepOne__container">
