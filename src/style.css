@@ -377,7 +377,7 @@ html {
 
   .clarendonQuestStepOne__form{
     font-size: 4vw;
-    max-width: 60rem;
+    max-width: 80vw;
     margin: 8vw auto;
     margin-top: 5vh;
     border-radius: 5px;
@@ -897,8 +897,6 @@ html {
         
         margin-top: 30vh;
         margin-left: 5vh;
-        
-        align-self: right;
       }
 
 
@@ -950,7 +948,8 @@ html {
       .clarendonQuest__M{
         align-self: center right;
         margin-left: 7vw;
-        width: 30vw;
+        margin-top: 5vh;
+        width: 27vw;
       }
 
       .clarendonQuest__container{
@@ -967,6 +966,30 @@ html {
 
           text-align: center;
       }
+
+
+    }
+
+    @media only screen and (min-width: 1200px){
+    
+      .clarendonQuestStepOne__title-image{
+        width: 14rem;
+        margin-left: 2vw;
+      }
+
+      .clarendonQuestStepOne__paragraph{
+        grid-area: 1 / 1 / 2 / 2 ;
+        margin-top: 30vh;
+        margin-left: 8vw;
+      }
+
+      .clarendonQuestStepOne__form{
+        margin-top: 50vh;
+        width: 45vw;
+        
+      }
+
+      
 
 
     }
@@ -1030,6 +1053,20 @@ html {
           margin-top: 87vh;
         }
 
+        .clarendonQuestStepOne__stickerpack{
+          width: 47vw;
+          max-width: 50rem;
+          
+          margin-top: 1vh;
+          align-content: right;
+        }
+
+        .clarendonQuestStepOne__paragraph{
+          font-size: 3vh;
+          margin-top: 30vh;
+          margin-left: 4vw ;
+        }
+
         
 
     }
@@ -1066,7 +1103,25 @@ html {
         padding-top: 47vw
       }
 
+      .clarendonQuestStepOne__stickerpack{
+        margin-right: -10vw;
+      }
+
       
+  }
+
+  @media only screen and (min-width: 1700px) {
+
+    .clarendonQuestStepOne__stickerpack{
+      margin-left: 7vw;
+    }
+  }
+
+  @media only screen and (min-width: 1800px) {
+
+    .clarendonQuestStepOne__stickerpack{
+      margin-left: 10vw;
+    }
   }
   
     
