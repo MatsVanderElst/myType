@@ -31,6 +31,7 @@
                     <li><a href="#characteristics__container">Characteristics</a></li>
                     <li><a href="#history__title">History</a></li>
                     <li><a href="#clarendonQuest__container">Clarendon Quest</a></li>
+                    <li><a href="index.php?language=en">ENG</a>/<a href="index.php?language=fr">FR</a>/<a href="index.php?language=de">DE</a></li>
                 </div>
             </div>
         </div>
@@ -121,7 +122,7 @@
         <article class="gallery__images">
             <?php foreach ($images as $image) : ?>
                 <div class="gallery__image">
-                    <img class="gallery__image-image" src="<?php echo $image['image_path'] ?>" alt="sticker image">
+                    <img class="gallery__image-image" src="<?php echo $image['file_path'] ?>" alt="sticker image">
                 </div>
             <?php endforeach; ?>
         </article>

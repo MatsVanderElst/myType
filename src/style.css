@@ -42,9 +42,22 @@ html {
     background-size: cover
   }
 
+  .footer__container{
+    text-align: center;
+  }
+
+  .footer__paragraph{
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0 auto;
+      margin-top: 17vh;
+      margin-bottom: 17vh;
+  }
+
   @media only screen and (max-width: 560px) {
     body{
       text-align: center;
+      
     }
   
   }
@@ -518,6 +531,19 @@ html {
    
     
     height: auto;
+  }
+
+  .gallery__image{
+    display: flex;
+    flex-direction: column;
+    margin: 4vw auto;
+  }
+
+  .gallery__image-image{
+    max-width: 40rem;
+    width: 60vw;
+    margin: 0 auto;
+    margin-bottom: 5vh;
   }
 
   
@@ -1333,7 +1359,6 @@ html {
         }
 
         .clarendonQuestStepThree__stickerImage{
-          margin-top: 2vh;
           width: 40vw;
           
           
